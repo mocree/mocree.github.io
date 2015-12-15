@@ -1,0 +1,31 @@
+.navbar-default {
+  background-color: #000;
+  border-color: transparent;
+  }
+button.navbar-toggle{
+  border: none; 
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-collapse {
+  border:none;
+}
+.site-footer{
+  background-color: $background-brand;
+  border: none;
+}
+
+blockquote{
+color: $gray-light;
+border-left: 4px solid #e8e8e8;
+padding-left: 15px;
+font-size: 18px;
+letter-spacing: 0px;
+}
+
+
+body{
+  background-color: #009688;
+}

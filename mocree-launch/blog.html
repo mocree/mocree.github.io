@@ -1,0 +1,37 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+ <!-- About page content header -->
+
+<!-- About page content -->
+<div class="page-content-white blog">
+  <div class= "wrapper">
+    <div id="blog-header">
+      <div class="wrapper">
+        <h4 class="post-title blog-title text-center orbitron">The Mocree Blog</h4>
+        <div class="text-center"><i class="fa fa-2x fa-volume-up primary-color"></i></div>
+        <h5 class="custom-subtitle text-center">
+          Meaningful stories and shared thoughts about musicians who gather, connect, collaborate and share. 
+          <br><br>By the makers and supporters of Mocree.</h5>
+      </div>
+    </div>
+    <!--content header -->
+    <div class="fadeIn fadeIn-2s">
+      {{site.categories.recent}}
+    </div>
+    <hr>
+    <p>Featured</p>
+    <ul>
+      {% for post in site.categories.featured %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+ 
+

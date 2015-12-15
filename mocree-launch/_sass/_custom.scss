@@ -1,0 +1,163 @@
+#banner{
+  margin-top: 20px;
+  //height: 300px;
+}
+#blog-header{
+  height: 200px;
+  
+}
+
+.blog{
+  color: rgba(0,0,0,0.8);
+  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -0.003em;
+  -webkit-font-smoothing: antialiased;
+}
+
+.blog-title{
+  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+}
+#slogan{
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+#subscribe{
+  padding: 50px 0;
+}
+  
+.section{
+  background-color: $section-color;
+}
+
+.section-brand{
+  background-color: $background-brand;
+  min-height: 300px;
+}
+
+.primary-color{
+  color: #50E3C2;
+}
+#about{
+  min-height: 300px;
+}
+
+.widget{
+  $border-color: rgba(151,151,151,.5);
+  //color: #50E3C2;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 24px;
+  //margin: 20px;
+  padding: 30px;
+  //background-color: #fff;
+  //border: 1px solid $border-color;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.custom-header{
+  font-family: 'Orbitron', sans-serif;
+}
+
+.custom-subtitle{
+  $subtitle-color: rgba(0,0,0,.5);
+  color: $subtitle-color;
+  font-size: 20px;
+}
+
+.member{
+  max-width:100%; 
+  max-height:100%;
+  margin:auto;
+  display:block;
+}
+
+.member-img{
+  background: url(/assets/steve.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+//temporary, fix page-content and coloring sets
+.page-content-white{
+  background-color: #fff;
+  padding:30px 0px;
+}
+
+.row-divide{
+    margin: 10px 0px;
+}
+
+.orbitron{
+  font-family: 'Orbitron', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+.fadeIn {
+        /* Styling for Demo
+        ---------------------------------------------------- */
+      
+
+        /* CSS needed for animation
+        ---------------------------------------------------- */
+        opacity:0;
+        -webkit-animation:fadeIn ease-in 1;
+        -moz-animation:fadeIn ease-in 1;
+        -o-animation:fadeIn ease-in 1;
+        animation:fadeIn ease-in 1;
+        -webkit-animation-fill-mode:forwards;
+        -moz-animation-fill-mode:forwards;
+        -o-animation-fill-mode:forwards;
+        animation-fill-mode:forwards;
+}
+
+/* Animation Times - Time for image to fade in
+---------------------------------------------------- */
+.fadeIn-2s {
+        -webkit-animation-duration:2s;
+        -moz-animation-duration:2s;
+        -o-animation-duration:2s;
+        animation-duration:2s;
+}
+
+.fadeIn-4s {
+        -webkit-animation-duration:4s;
+        -moz-animation-duration:4s;
+        -o-animation-duration:4s;
+        animation-duration:4s;
+}
+
+/* Animation Delay - Time for image to be delayed
+---------------------------------------------------- */
+.fadeIn-Delay-3s {
+        -webkit-animation-delay:3s;
+        -moz-animation-delay:3s;
+        -o-animation-delay:3s;
+        animation-delay:3s;
+}
+
+.fadeIn-Delay-5s {
+        -webkit-animation-delay:5s;
+        -moz-animation-delay:5s;
+        -o-animation-delay:5s;
+        animation-delay:5s;
+}
+
+/* Key Frames
+---------------------------------------------------- */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }

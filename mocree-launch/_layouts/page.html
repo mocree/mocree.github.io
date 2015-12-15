@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body id="page-top" class="index">
+  	{% include header.html %}
+    <div class="row">
+      <!-- Main content area for page -->
+      <div class="col-md-8">
+        {{content}}
+      </div>
+      <div class="col-md-4">
+        <div class="pull-right affix">
+          <div class="section-brand">
+            {% include subscribe.html %}
+            {% include footer.html %}
+          </div>
+        </div>
+      </div>
+    </div>
+   </body>
+</div>
+</html>
