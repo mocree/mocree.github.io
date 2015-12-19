@@ -7,7 +7,7 @@
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+//$base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -45,19 +45,26 @@ $on-laptop:        800px;
 
 
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-      
-;
 
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "base";
+$grid-float-breakpoint:     10000px; // MOVE need to find correct scope in import. Add to overrides
 @import "bootstrap";
-@import "custom";
-@import "override";
-@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+@import "custom"; // FIX is using font-family-base from boot vars
+@import "override"; // FIX is using brand primary from boot vars
+
+
+
+@import "layout";
+@import "syntax-highlighting";
+
+
+
+
+
 @import url(https://fonts.googleapis.com/css?family=Orbitron:400,500);
-@import url(https://fonts.googleapis.com/css?family=Karla);
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
-@import url(https://fonts.googleapis.com/css?family=Source+Serif+Pro);

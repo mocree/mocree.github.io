@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mocree Blog Sample
-permalink: /blog/MocreeBlogSample.html
+permalink: /blog/mocree-blog-sample
 categories: 
 - featured
 - recent

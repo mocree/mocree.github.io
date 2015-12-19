@@ -1,31 +1,60 @@
+// ALL OVERRIDES ARE BOOTSTRAP OVERRIDES UNLESS STATED
+
+//Navbar
+.navbar-collapse {
+  border:none;
+}
 .navbar-default {
   background-color: #000;
   border-color: transparent;
-  }
-button.navbar-toggle{
-  border: none; 
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: transparent;
 }
 
-.navbar-collapse {
-  border:none;
+//Navbar button  
+button.navbar-toggle{
+  border: none; 
+  height: 60px !important;
 }
-.site-footer{
+
+// Navbar links
+$navbar-default-link-color:                #fff;
+$navbar-default-link-hover-color:          #fff;
+$navbar-default-link-hover-bg:             $brand-primary;
+$navbar-default-link-active-color:         #555 !default;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%) !default;
+
+.navbar-default .navbar-nav > li > a {
+    color: $navbar-default-link-color;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: $navbar-default-link-hover-color;
+    background-color: $navbar-default-link-hover-bg;
+}
+
+
+
+//Scaffolding
+body{
   background-color: $background-brand;
-  border: none;
 }
+
+
 
 blockquote{
-color: $gray-light;
-border-left: 4px solid #e8e8e8;
-padding-left: 15px;
-font-size: 18px;
-letter-spacing: 0px;
+  color: $gray-light;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: 0px;
+}
+.well{
+  text-align: center;
+  background-color: #fff;
 }
 
 
-body{
-  background-color: #009688;
-}
+
+

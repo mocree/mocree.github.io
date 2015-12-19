@@ -1,110 +1,150 @@
-#banner{
-  margin-top: 20px;
-  //height: 300px;
-}
-#blog-header{
-  height: 200px;
+$font-family-brand: 'Orbitron', sans-serif;
+$font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
+
+//************* Home Page ***************
+
+  //Image section used on launch home page
+  #banner{
+    margin-top: 20px;
+    //height: 300px;
+  }
+  //Words used on launch home page
+  #slogan{
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+
+//************ Blog Page ****************
+  #blog-header{
+    height: 200px;
   
-}
+  }
+  .blog{
+    color: rgba(0,0,0,0.8);
+    font-family: $font-family-content;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
+    letter-spacing: -0.003em;
+    -webkit-font-smoothing: antialiased;
+  }
+  .blog-title{
+    font-family: $font-family-base;
+    //font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  }
 
-.blog{
-  color: rgba(0,0,0,0.8);
-  font-family: Georgia,Cambria,"Times New Roman",Times,serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 21px;
-  line-height: 1.58;
-  letter-spacing: -0.003em;
-  -webkit-font-smoothing: antialiased;
-}
 
-.blog-title{
-  font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
-}
-#slogan{
-  color: white;
-  -webkit-font-smoothing: antialiased;
-}
 
-#subscribe{
-  padding: 50px 0;
-}
+//************* About Page ****************
+  #about{
+    min-height: 300px;
+  }
+
+  .widget{
+    $border-color: rgba(151,151,151,.5);
+    font-family: $font-family-brand;
+    font-size: 24px;
+    padding: 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .member{
+    max-width:100%; 
+    max-height:100%;
+    margin:auto;
+    display:block;
+  }
+
+  .member-img{
+    background: url(/assets/steve.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+
+
+//************ Font Classes ****************
+  .orbitron{
+    font-family: $font-family-brand;
+    -webkit-font-smoothing: antialiased;
+  }
+  .orbitron-bold{
+    font-family: $font-family-brand;
+  }
+
+
+//**************** Logo Classes ****************
+  .mocree-symbol-sm{
+    height: 55px;
+  }
+
+  .mocree-symbol-md{
+    height: 80px;
+  }
+
+  .mocree-symbol-brand{
+    //ensure bootstrap img-circle class is attached to image!
+    padding:5px;
+    background-color: $background-brand;
   
-.section{
-  background-color: $section-color;
-}
-
-.section-brand{
-  background-color: $background-brand;
-  min-height: 300px;
-}
-
-.primary-color{
-  color: #50E3C2;
-}
-#about{
-  min-height: 300px;
-}
-
-.widget{
-  $border-color: rgba(151,151,151,.5);
-  //color: #50E3C2;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 24px;
-  //margin: 20px;
-  padding: 30px;
-  //background-color: #fff;
-  //border: 1px solid $border-color;
-  border-radius: 4px;
-  text-transform: uppercase;
-  text-align: center;
-  width: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-
-.custom-header{
-  font-family: 'Orbitron', sans-serif;
-}
-
-.custom-subtitle{
-  $subtitle-color: rgba(0,0,0,.5);
-  color: $subtitle-color;
-  font-size: 20px;
-}
-
-.member{
-  max-width:100%; 
-  max-height:100%;
-  margin:auto;
-  display:block;
-}
-
-.member-img{
-  background: url(/assets/steve.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%;
-  width: 200px;
-  height: 200px;
-}
-
-//temporary, fix page-content and coloring sets
-.page-content-white{
-  background-color: #fff;
-  padding:30px 0px;
-}
-
-.row-divide{
-    margin: 10px 0px;
-}
-
-.orbitron{
-  font-family: 'Orbitron', sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
+  }
 
 
+//************ Subscribe Section *************
+  //Subscribe section used once on each page
+  #subscribe{
+    padding: 50px 0;
+  }
+  .social-icons{
+    a{
+      color: #111;
+    }
+  }
 
+
+//************** Utilities ****************** 
+  .section{
+    background-color: $section-color;
+  }
+
+  .section-brand{
+    background-color: $background-brand;
+    min-height: 300px;
+  }
+
+  .primary-color{
+    color: $brand-primary;
+  }
+  .custom-title{
+    font-family: $font-family-brand;
+    // font style current clashing in title. Looking for solution
+  }
+
+  .custom-subtitle{
+    $subtitle-color: rgba(0,0,0,.6); //place in global scope
+    color: $subtitle-color;
+    font-size: 20px;
+    //font-family: $font-family-base;
+  }
+  .row-divide{
+      margin: 10px 0px;
+  }
+  //temporary, fix page-content and coloring sets
+  .page-content-white{
+    background-color: #fff;
+    padding: 30px 0px;
+  }
+
+// ************ Animation Styles ***************
 .fadeIn {
         /* Styling for Demo
         ---------------------------------------------------- */
