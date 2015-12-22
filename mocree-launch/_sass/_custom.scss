@@ -22,7 +22,7 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
   }
   .blog{
     color: rgba(0,0,0,0.8);
-    font-family: $font-family-content;
+    //font-family: $font-family-content;
     font-weight: 400;
     font-style: normal;
     font-size: 21px;
@@ -32,7 +32,13 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
   }
   .blog-title{
     font-family: $font-family-base;
-    //font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
   }
 
 
@@ -42,12 +48,15 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
     min-height: 300px;
   }
 
+  .btn-primary:focus, .btn-primary.focus, .widget{
+    background-color:$background-brand;
+  }
   .widget{
-    $border-color: rgba(151,151,151,.5);
+    background-color:$background-brand;
+    border: none;
     font-family: $font-family-brand;
     font-size: 24px;
     padding: 30px;
-    border-radius: 4px;
     text-transform: uppercase;
     text-align: center;
     width: 100%;

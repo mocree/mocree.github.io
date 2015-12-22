@@ -205,12 +205,12 @@
   height: 70px;
 }
 .post-title {
-    font-size: 42px;
+    font-size: 30px;
     letter-spacing: -1px;
     line-height: 1;
 
     @include media-query($on-laptop) {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
 
