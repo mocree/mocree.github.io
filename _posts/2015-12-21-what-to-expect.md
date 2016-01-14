@@ -14,12 +14,9 @@ categories:
 </div>
 <br>
 <p class="text-justify">
-Here's a heads up on why you should stay tuned to The Mocree Blog. Sticking with the core of what Mocree is about and our sole mission, you can catch us on The Mocree Blog with news, stories, and interviews filled with chatter about musicians who gather connect collaborate and share. 
+Here's a heads up on why you should stay tuned to The Mocree Blog. Sticking with the core of what Mocree is about and our sole mission, you can catch us on The Mocree Blog with news, stories, and interviews filled with chatter about musicians who gather, connect, collaborate, and share. 
 </p>
 <p class="text-justify">
-In addition we'll be giving updates on the release of the app, app features, and shout outs to real musicians who are and will help to make Mocree a great product. Stay tuned, you don't want to miss the movement. It's all positive vibes coming from this frequency. 
-</p>
-<p class="text-justify">
-Be blessed!
+Plus we'll be giving updates on the release of the app, app features, and shout outs to real musicians who are and will help to make Mocree a great product. Stay tuned, you don't want to miss the movement!
 </p>
 <div class="post-footer"></div>

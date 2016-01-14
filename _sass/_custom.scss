@@ -8,6 +8,10 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
     margin-top: 20px;
     //height: 300px;
   }
+  
+  #banner-img{
+    background-color: #000;
+  }
   //Words used on launch home page
   #slogan{
     color: #fff;
@@ -78,7 +82,9 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
     width: 200px;
     height: 200px;
   }
-
+  .about-header{
+    height: 250px;
+  }
 
 
 //************ Font Classes ****************
@@ -97,20 +103,20 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
   }
 
   .mocree-symbol-md{
-    height: 80px;
+    height: 160px;
   }
 
   .mocree-symbol-brand{
     //ensure bootstrap img-circle class is attached to image!
     padding:5px;
-    background-color: $background-brand;
+    background-color: $brand-primary;
   
   }
 
 
 //************ Subscribe Section *************
   //Subscribe section used once on each page
-  .subscribe-form {
+  #subscribe{
     padding: 50px 0;
   }
   .social-icons{
@@ -127,6 +133,7 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
 
   .section-brand{
     background-color: $background-brand;
+    //@include gradient-radial ($background-brand, #000000);  
     min-height: 300px;
   }
 
@@ -152,7 +159,61 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
     background-color: #fff;
     padding: 30px 0px;
   }
+  
+  
+  
 
+// ************ Mailchimp Styles ***************
+
+.form-logo{
+  margin-top: 30px;
+  height: 225px
+}
+
+.form-title{
+  //$shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
+  //@include box-shadow($shadow);
+  text-shadow: $carousel-text-shadow;
+}
+
+#mc_embed_signup form{
+  background-color: $background-brand;
+  @include placeholder;
+}
+
+
+#mc_embed_signup h2{
+  font-weight: normal !important;
+  font-size: 30px !important;
+  color: white !important;
+}
+
+#mc_embed_signup .button{
+  background-color: $brand-primary !important;
+  
+}
+
+#mc-embedded-subscribe{
+  margin: 0 !important;
+}
+
+#mc_embed_signup input {
+  border: none !important;
+  -webkit-appearance: none;
+  border-radius: 6px;
+}
+
+#mc_embed_signup div.mce_inline_error{
+  //Lets add bootstrap error style method for forms in Mailchimp
+  margin: 5px 5px !important;
+  padding: 5px 10px;
+  background-color: white !important;
+  border-radius: 6px;
+  letter-spacing: .1em;
+  font-weight: bold;
+  z-index: 1;
+  color: $brand-danger !important;
+}
 // ************ Animation Styles ***************
 .fadeIn {
         /* Styling for Demo

@@ -7,10 +7,11 @@
   	{% include header.html %}
     <div class="row">
       <!-- Main content area for page -->
-      <div class="col-md-8">
+      <div class="row">
         {{content}}
+        {% include footer.html %}
       </div>
-      <div class="col-md-4">
+      <div class="col-md-4 hidden">
         <div class="pull-right affix">
           <div class="section-brand">
             {% include subscribe.html %}
