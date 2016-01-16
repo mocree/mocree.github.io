@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html>
-
   {% include head.html %}
-
   <body id="page-top" class="index">
   	{% include header.html %}
     <div class="row">
-      <!-- Main content area for page -->
-      <div class="row">
-        {{content}}
-        {% include footer.html %}
-      </div>
-      <div class="col-md-4 hidden">
-        <div class="pull-right affix">
-          <div class="section-brand">
-            {% include subscribe.html %}
-            {% include footer.html %}
-          </div>
+      {{ content }}
+      {% include footer.html %}
+    </div>
+    <div class="col-md-4 hidden">
+      <div class="pull-right affix">
+        <div class="section-brand">
+          {% include subscribe.html %}
+          {% include footer.html %}
         </div>
       </div>
     </div>
