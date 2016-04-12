@@ -1,6 +1,12 @@
 $font-family-brand: 'Orbitron', sans-serif;
 $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
+//Navigation
 
+.nav-boxshadow{
+  -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.5);
+             box-shadow: 0 2px 4px 0px rgba(0,0,0,0.5);
+}
 //************* Home Page ***************
 
   //Image section used on launch home page
@@ -8,7 +14,7 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
     margin-top: 20px;
     //height: 300px;
   }
-  
+
   #banner-img{
     background-color: #000;
   }
@@ -22,7 +28,7 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
 //************ Blog Page ****************
   #blog-header{
     height: 200px;
-  
+
   }
   .blog{
     color: rgba(0,0,0,0.8);
@@ -68,7 +74,7 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
   }
 
   .member{
-    max-width:100%; 
+    max-width:100%;
     max-height:100%;
     margin:auto;
     display:block;
@@ -110,7 +116,7 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
     //ensure bootstrap img-circle class is attached to image!
     padding:5px;
     background-color: $brand-primary;
-  
+
   }
 
 
@@ -126,14 +132,14 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
   }
 
 
-//************** Utilities ****************** 
+//************** Utilities ******************
   .section{
     background-color: $section-color;
   }
 
   .section-brand{
     background-color: $background-brand;
-    //@include gradient-radial ($background-brand, #000000);  
+    //@include gradient-radial ($background-brand, #000000);
     min-height: 300px;
   }
 
@@ -159,9 +165,9 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
     background-color: #fff;
     padding: 30px 0px;
   }
-  
-  
-  
+
+
+
 
 // ************ Mailchimp Styles ***************
 
@@ -190,7 +196,7 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
 
 #mc_embed_signup .button{
   background-color: $brand-primary !important;
-  
+
 }
 
 #mc-embedded-subscribe{
@@ -218,7 +224,7 @@ $font-family-content: Georgia,Cambria,"Times New Roman",Times,serif;
 .fadeIn {
         /* Styling for Demo
         ---------------------------------------------------- */
-      
+
 
         /* CSS needed for animation
         ---------------------------------------------------- */

@@ -12,12 +12,17 @@
     background-color: transparent;
 }
 
-//Navbar button  
+//Navbar button
 button.navbar-toggle{
-  border: none; 
+  border: none;
   height: 60px !important;
 }
 
+//Navbar brand
+.navbar-brand{
+  margin-bottom: 20px;
+  padding: 7px 15px;
+}
 // Navbar links
 $navbar-default-link-color:                #fff;
 $navbar-default-link-hover-color:          #fff;
@@ -55,7 +60,3 @@ blockquote{
   text-align: center;
   background-color: #fff;
 }
-
-
-
-
